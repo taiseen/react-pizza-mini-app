@@ -7,13 +7,12 @@
 - React Router 
 - Tailwind CSS
 
-# 
 
 ## Features
 * Shopping Cart
 * Place Order
 
-# 
+
 
 [Learning Video Link](https://www.youtube.com/watch?v=MfhZJcTOy1A)
 
