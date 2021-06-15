@@ -9,9 +9,9 @@ const ProductCard = ({ info }) => {
     const [isAdded, setIsAdded] = useState(false);
 
     return (
-        <Link to={{ pathname: `/product/${idMeal}`, state: info }}>
+        <Link to={{ pathname: `/product/${idMeal}`, state: info }} >
 
-            <img src={strMealThumb} alt="pizza" />
+            <img src={strMealThumb} alt="pizza" className="rounded" />
 
             <div className="text-center">
                 <h2 className="text-lg font-bold py-2">{strMeal}</h2>

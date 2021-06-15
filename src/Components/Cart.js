@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { ProductContext } from './Context/ProductContext';
 
+// 3H:41M video
+
 const Cart = () => {
     document.title = 'Cart';
 
@@ -31,6 +33,18 @@ const Cart = () => {
                     </div>
                 </li>
             </ul>
+
+            <hr className="my-6" />
+
+            <div className="text-right">
+                <div className="mb-5">
+                    Grand Total : $100
+                </div>
+                <div>
+                    <button className="bg-yellow-500 px-4 py-3 rounded-full leading-none focus:outline-none ">Order Now</button>
+                </div>
+
+            </div>
             {/* {addProduct.map(product => <h1>{product.strMeal}</h1>)} */}
         </div>
     );

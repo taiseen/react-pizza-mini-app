@@ -28,17 +28,17 @@ const ProductContextProvider = (props) => {
     const handleAddProduct = (e, product, setIsAdded) => {
         e.preventDefault();
 
-        let newProduct = { ...addProduct };
+        let newProduct = { ...addProduct }; // newProduct = {} 
         if (!newProduct.items) {
-            newProduct.items = {}
+            newProduct.items = {} // newProduct = { items: { } } 
         }
 
         if (newProduct.items[product.idMeal]) {
             // next time product quantity increase...
-            newProduct.items[product.idMeal] += 1;
+            newProduct.items[product.idMeal] += 1; // newProduct = { items: { 62ZA18 : 3 } } 
         } else {
             // first time product quantity...
-            newProduct.items[product.idMeal] = 1;
+            newProduct.items[product.idMeal] = 1; // newProduct = { items: { 62ZA18 : 1 } }
         }
 
         if (!newProduct.totalItem) {
